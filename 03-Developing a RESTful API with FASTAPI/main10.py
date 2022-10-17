@@ -24,3 +24,8 @@ app = FastAPI()
 @app.post("/posts", status_code = status.HTTP_201_CREATED)
 async def create_post(post: Post):
     return post
+
+"""
+The decorator arguments come right after the path as keyword arguments. The status_code 
+option simply expects an integer representing the status code. 
+"""
